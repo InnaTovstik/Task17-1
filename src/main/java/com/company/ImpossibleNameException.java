@@ -15,5 +15,4 @@ public class ImpossibleNameException extends Exception {
     public String getMessage() {
         return "Имя введено не латинским алфавитом : " + name;
     }
-
 }

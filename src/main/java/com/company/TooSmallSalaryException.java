@@ -14,6 +14,4 @@ package com.company;
      public String getMessage() {
          return "Размер зарплаты меньше 0 : " + salary;
      }
-
-
  }

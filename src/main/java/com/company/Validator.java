@@ -23,7 +23,6 @@ public class Validator extends Exception {
             }
         }
 
-
     // Метод проверяет является ли зарплата является положительным числом,
     // иначе бросается TooSmallSalaryException
     public static void validateSalary(double salary) throws TooSmallSalaryException {
@@ -32,7 +31,5 @@ public class Validator extends Exception {
             //Возбуждаем TooSmallSalaryException из метода validateSalary()
             throw new TooSmallSalaryException(salary);
         }
-
     }
-
 }

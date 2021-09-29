@@ -3,7 +3,6 @@ package com.company;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
-
 public class ValidatorTest {
 
     private String name;
@@ -39,16 +38,15 @@ public class ValidatorTest {
 
     // Метод проверки имени/фамилии бросает исключение если входное значение пустая строка
     @Test
-    public void shouldNullPointerExceptionFromValidateNameBecaseNot() {
+    public void shouldNullPointerExceptionFromValidateNameEmpty() {
         name = "";
         Assertions.assertThrows(NullPointerException.class, () -> Validator.validateName(name));
     }
 
-// Метод проверки имени/фамилии бросает исключение если входное значение null
-@Test
-    public void shouldNullPointerExceptionFromValidateNameBecaseNull() {
+    // Метод проверки имени/фамилии бросает исключение если входное значение null
+    @Test
+    public void shouldNullPointerExceptionFromValidateNameNull() {
         name = null;
         Assertions.assertThrows(NullPointerException.class, () -> Validator.validateName(name));
-}
-
+    }
 }
